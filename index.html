@@ -11,28 +11,38 @@
 <body>
 
     <header>
-        <p>Setup</p>
-        <nav>
-            <ol>
-                <li><a href="#google-chrome">Google Chrome</a></li>
-                <li><a href="#visual-studio-code">Visual Studio Code</li>
-                <li><a href="#figma">Figma</a></li>
-                <li><a href="#github">Github</a></li>
-            </ol>
-        </nav>
-                
-        <p>Conceptos esenciales del Desarrollo Web</p>
+        <details open>
+            <summary>
+                Setup
+            </summary>
 
-        <nav>
-            <ol>
-                <li><a href="#html">Qué es HTML</a></li>
-                <li><a href="#etiquetas">Etiquetas</a></li>
-                <li><a href="#dom">DOM</a></li>
-                <li><a href="#semantica">Semántica</a></li>
-                <li><a href="#atributos">Atributos</a></li>
-                <li><a href="#css">Qué es CSS</a></li>
-            </ol>
-        </nav>
+            <nav>
+                <ol>
+                    <li><a href="#google-chrome">Google Chrome</a></li>
+                    <li><a href="#visual-studio-code">Visual Studio Code</li>
+                    <li><a href="#figma">Figma</a></li>
+                    <li><a href="#github">Github</a></li>
+                </ol>
+            </nav>
+        </details>
+
+        <details open>
+            <summary>
+                Conceptos esenciales del Desarrollo Web
+            </summary>
+            <nav>
+                <ol>
+                    <li><a href="#html">Qué es HTML</a></li>
+                    <li><a href="#etiquetas">Etiquetas</a></li>
+                    <li><a href="#dom">DOM</a></li>
+                    <li><a href="#semantica">Semántica</a></li>
+                    <li><a href="#atributos">Atributos</a></li>
+                    <li><a href="#css">Qué es CSS</a></li>
+                </ol>
+            </nav>
+        </details>
+
+
     </header>
     <h1>Curso esencial de HTML y CSS</h1>
 
@@ -70,6 +80,20 @@
     <h3 id="html">Qué es HTML</h3>
     <p>Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el
         significado y la estructura del contenido.</p>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
 
     <h3 id="etiquetas">Etiquetas</h3>
     <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada
@@ -105,10 +129,11 @@
 
     <h2>Modelo de caja</h2>
     <h3>El modelo de caja está compuesto por:</h3>
-    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.</p>
+    <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
+        herramientas de desarrollo avanzadas y de amigable uso.</p>
     <ol>
         <li>Tamaño del del contenido / ancho y altos</li>
-        <li>Padding / Relleno</li> 
+        <li>Padding / Relleno</li>
         <li>Border / Bordes</li>
         <li>Margin / Márgenes</li>
     </ol>
@@ -124,9 +149,12 @@
     <h3>Propiedades lógicas para el modelo de caja:</h3>
     <ul>
         <li>inline-size / block-size</li>
-        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
-        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
-        <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
+        <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start |
+            margin-inline-end</li>
+        <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start |
+            border-inline-end</li>
+        <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |
+            padding-inline-end</li>
     </ul>
 
     <h3>Modelo de caja</h3>
