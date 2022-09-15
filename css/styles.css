@@ -39,7 +39,7 @@ html {
 
 body {
     color: var(--gray10);
-    font-family: leonidas;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -68,7 +68,7 @@ nav details summary {
     font-weight: bold;
 }
 
-details {
+h2 {
     font-size: 2em;
 }
 
