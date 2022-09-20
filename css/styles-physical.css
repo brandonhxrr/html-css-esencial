@@ -35,6 +35,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -51,6 +52,7 @@ h1 {
     font-size: 60px;
     margin-top: 64px;
     margin-bottom: 16px;
+    font-weight: normal;
     /* margin-left: 20px;
     margin-right: 10px;
     margin: 64px 10px 16px 10px; */
@@ -64,9 +66,23 @@ hr {
     margin: 64px 0;
 }
 
+.header-content {
+    position: relative;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
+
 header {
     font-size: 14px;
+    width: 188px;
     color: var(--gray30);
+    position: absolute;
+    z-index: 1;
+    left: -232px;
+    top: 64px;
 }
 
 header a {
@@ -78,8 +94,13 @@ header a:hover {
     color: var(--gray20);
 }
 
-nav details summary {
+header li {
+    margin-bottom: 16px;
+}
+
+details summary {
     font-weight: bold;
+    line-height: 24px;
 }
 
 h2 {
@@ -93,6 +114,9 @@ h3 {
     margin-top: 16px;
     margin-bottom: 24px;
     font-weight: normal;
+    position: sticky;
+    background: white;
+    top: 0;
 }
 
 pre {
@@ -116,6 +140,17 @@ blockquote span {
 
 blockquote span:before {
 content: '-';
+}
+
+.main {
+}
+
+.wrapper {
+    width: 902px;
+    margin: auto;
+}
+
+.main-content {
 }
 
 .hero {
@@ -153,7 +188,7 @@ content: '-';
 
 .section-content h3 {
     counter-increment: titleList;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
 }
 
 .section-content h3::before {
@@ -162,8 +197,11 @@ content: '-';
 
 .section-content h3::after {
     content: '';
-    width: 32px;
+    width: 80px;
     height: 4px;
     background: var(--gray10);
     display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
