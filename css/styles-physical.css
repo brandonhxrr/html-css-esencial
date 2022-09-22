@@ -142,15 +142,9 @@ blockquote span:before {
 content: '-';
 }
 
-.main {
-}
-
 .wrapper {
     width: 902px;
     margin: auto;
-}
-
-.main-content {
 }
 
 .hero {

@@ -28,9 +28,9 @@
 
 :root {
     font-size: 18px;
-    --gray10: #212121;
-    --gray20: #212429;
-    --gray30: #616161;
+    --white10: white;
+    --white20: #A5A3A5;
+    --white30: #3A3539;
 }
 
 html {
@@ -38,12 +38,17 @@ html {
 }
 
 body {
-    color: var(--gray10);
-    font-family: 'Roboto', sans-serif;
+    color: var(--white10);
+    font-family: 'Nunito', sans-serif;
+    background: #251F24;
 }
 
 a {
-    color: var(--gray10);
+    color: var(--white10);
+}
+
+h1, h2, h3 {
+    font-weight: normal;
 }
 
 h1 {
@@ -52,16 +57,20 @@ h1 {
 
 header {
     font-size: 14px;
-    color: var(--gray30);
+    color: var(--white10);
+}
+
+header li {
+    color: var(--white20);
 }
 
 header a {
-    color: var(--gray30);
+    color: var(--white20);
     text-decoration: none;
 }
 
 header a:hover {
-    color: var(--gray20);
+    color: var(--white20);
 }
 
 nav details summary {
@@ -77,11 +86,15 @@ h3 {
 }
 
 pre {
-    background: #FEC62E;
+    background: var(--white30);
+}
+
+p {
+    color: var(--gray20);
 }
 
 .hero {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent),  url('../images/pattern.png');
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
     height: 350px;
 }
 
@@ -101,6 +114,6 @@ pre {
     content: '';
     width: 32px;
     height: 4px;
-    background: var(--gray10);
+    background: var(--white10);
     display: inline-block;
 }
