@@ -97,6 +97,9 @@ hr {
 
 pre {
     background: var(--white30);
+    padding: 40px;
+    overflow: auto;
+    border-radius: 8px;
 }
 
 p {
@@ -122,24 +125,39 @@ p {
 }
 
 .section-content h3::before {
-    content: counter(titleList, decimal);
-}
-
-.section-content h3::after {
-    content: '';
-    width: 32px;
-    height: 4px;
-    background: var(--white10);
-    display: inline-block;
+    content: counter(titleList, decimal) '. ';
 }
 
 blockquote {
+    line-height: 32px;
+    font-size: 24px;
     margin-block-start: 80px;
     margin-block-end: 63px;
     background-color: var(--white30);
     border-radius: 8px;
+    padding-inline-end: 24px;
+    padding-inline-start: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+}
+
+blockquote p {
+    color: var(--white10);
 }
 
 .main hr {
     display: none;
+}
+
+.main {
+
+}
+
+.wrapper {
+    max-inline-size: 902px;
+    margin: auto;
+}
+
+.main-content {
+    padding-inline: 16px;
 }
