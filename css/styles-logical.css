@@ -57,13 +57,29 @@ h1 {
     margin-block-end: 16px;
 }
 
+.header {
+    position: sticky;
+    inset-block-start: -45px;
+}
+
+.header-content {
+    position: relative;
+    inset-block-start: 64px;
+}
+
 header {
     font-size: 14px;
     color: var(--white10);
+    position: absolute;
+    /* inset-block-end: ; */
+    inset-inline-start: -208px;
+    /* inset-inline-end: ; */
+    inline-size: 188px;
 }
 
 header li {
     color: var(--white20);
+    margin-block-end: 16px;
 }
 
 header a {
