@@ -38,6 +38,7 @@ html {
 }
 
 body {
+    margin: 0;
     color: var(--white10);
     font-family: 'Nunito', sans-serif;
     background: #251F24;
@@ -52,29 +53,19 @@ a {
 } */
 
 h1 {
-    font-size: 60px;
-    margin-block-start: 64px;
+    font-size: 40px;
+    margin-block-start: 20px;
     margin-block-end: 16px;
 }
 
-.header {
-    position: sticky;
-    inset-block-start: -45px;
-}
-
 .header-content {
-    position: relative;
-    inset-block-start: 64px;
+    padding-inline: 20px;
 }
 
 header {
     font-size: 14px;
     color: var(--white10);
-    position: absolute;
-    /* inset-block-end: ; */
-    inset-inline-start: -208px;
-    /* inset-inline-end: ; */
-    inline-size: 188px;
+    margin-block-start: 20px;
 }
 
 header li {
@@ -127,7 +118,7 @@ p {
 
 .hero {
     background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
-    height: 350px;
+    block-size: 100px;
 }
 
 .section-content {
@@ -232,4 +223,33 @@ blockquote p {
 
 .form ::-webkit-input-placeholder {
     color: var(--white20);
+}
+
+@media screen and (min-width: 1366px) {
+
+    h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+    }
+
+    .hero {
+        block-size: 350px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+    }
+    
+    .header-content {
+        position: relative;
+        inset-block-start: 64px;
+        padding-inline: 0;
+    }
+    
+    header {
+        position: absolute;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
 }
