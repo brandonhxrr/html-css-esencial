@@ -210,3 +210,26 @@ blockquote p {
     border-radius: 50%;
     margin-inline: 5px;
 }
+
+.form input {
+    inline-size: 100%;
+    border: 1px solid var(--white10);
+    background: #251F24;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-inline: 16px;
+    padding-block: 12px;
+    color: var(--white10);
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+    background: #157EFB;
+    border: none;
+}
+
+.form ::-webkit-input-placeholder {
+    color: var(--white20);
+}
